@@ -1,0 +1,138 @@
+/*
+grey:			#88A2AA
+grey-orange:	#ADA296
+skin:			#E2856E
+orange:			#F42C04
+black:			#0F1A20
+*/
+
+body{
+	background: #0F1A20;
+    /*background: url(codeWp.jpg);*/
+	color: white;
+}
+
+.raleway{
+	font-family: 'Raleway', sans-serif;
+}
+
+.nav-right{
+	display: inline;
+}
+
+#nav {
+    color: white;
+    height: 100px;
+    position: fixed;
+    z-index: 4;
+    width: 100%;
+}
+
+video{
+	filter: grayscale(0.8);
+}
+
+#front-page{
+    height:800px;
+}
+
+#main-title {
+    position: absolute;
+    z-index: 2;
+    color: white;
+    top: 100px;
+    left: 100px;
+}
+
+#main-content {
+    position: absolute;
+    z-index: 2;
+    top: 120px;
+    right: 154px;
+    background: rgba(0,0,0,0.2);
+    padding: 20px 30px;
+    font-family: 'Montserrat', sans-serif;
+    display: none;
+}
+
+#main-content h2 {
+    color: white;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+#main-content h3{
+	color: white;
+	border-bottom: 1px solid white;
+	margin-top: 20px;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+#main-content h3:hover{
+    font-size: 40px;
+    margin-top: 20px
+}
+
+#about-me img{
+	border-radius: 50%;
+	width: 50%;
+}
+
+#about-me h1{
+	border-bottom: 1px solid;
+	margin-bottom: 40px;
+	padding-bottom: 30px;
+}
+
+#about-me p{
+	font-size: 18px;
+}
+
+#skills img{
+	width: 400px;
+	transform: rotate(-80deg);
+	position: relative;
+	left: 600px;
+	bottom: 500px;
+}
+
+#skills .ladder{
+	width: 200px;
+	transform: rotate(0deg);
+	left: 200px;
+	bottom: 0px;
+	transition: all 1s;
+}
+
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+
+/*MOBILE VIEW*/
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+}
+
