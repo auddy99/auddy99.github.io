@@ -58,7 +58,7 @@ body{
 }
 
 video{
-	filter: grayscale(0.8);
+	filter: brightness(0.8);
 }
 
 #front-page{
@@ -103,20 +103,15 @@ video{
     margin-top: 20px
 }
 
-#about-me img{
-	border-radius: 50%;
-	width: 50%;
+.subHead{
+    border-bottom: 1px solid;
+    margin-bottom: 40px;
+    padding-bottom: 30px;
 }
 
-#about-me h1{
-	border-bottom: 1px solid;
-	margin-bottom: 40px;
-	padding-bottom: 30px;
-}
-
-#about-me p{
-	font-size: 18px;
-}
+#about-me{margin-bottom: 210px}
+#about-me img{border-radius: 50%;width: 50%;}
+#about-me p{font-size: 18px;}
 
 #skills img{
 	width: 400px;
@@ -134,6 +129,11 @@ video{
 	transition: all 1s;
 }
 
+#skills h1{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
 
 
 /* width */
@@ -156,12 +156,6 @@ video{
   background: #555;
 }
 
-
-/*MOBILE VIEW*/
-
-@media only screen and (max-width: 600px) {
-  body {
-    background-color: lightblue;
-  }
+canvas{
+    /*border: 2px solid;*/
 }
-
