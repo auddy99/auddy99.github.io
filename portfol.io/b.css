@@ -8,7 +8,6 @@ black:			#0F1A20
 
 body{
 	background: #0F1A20;
-    /*background: url(codeWp.jpg);*/
 	color: white;
 }
 
@@ -21,16 +20,45 @@ body{
 }
 
 #nav {
+    background: linear-gradient(180deg, #0F1A20, #122831);
     color: white;
-    height: 100px;
+    height: 50px;
+    font-size: 20px;
+    padding: 10px 15px;
+    opacity: 90%;
     position: fixed;
     z-index: 4;
     width: 100%;
+    top: -50px;
+    transition: all 0.5s;
+}
+
+#nav .fab{
+    font-size: 30px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+#nav a{
+    color: white;
+    text-decoration: none;
+    margin: 0 5px;
+    font-size: 13px;
+    border: 1px solid white;
+    border-radius: 3px;
+    padding: 6px;
+    position: relative;
+    bottom: 5px;
+    cursor: pointer;
+}
+
+.navScroll{
+    top: 0px !important;
 }
 
 video{
     width: 100%;
-	filter: grayscale(0.8);
+	filter: brightness(0.5);
 }
 
 #front-page{
@@ -42,7 +70,7 @@ video{
     z-index: 2;
     color: white;
     top: 100px;
-    left: 10px;
+    left: 25px;
 }
 
 #main-content {
@@ -67,6 +95,12 @@ video{
 	margin-top: 20px;
 }
 
+.subHead{
+    border-bottom: 1px solid;
+    margin-bottom: 40px;
+    padding-bottom: 30px;
+}
+
 #about-me{
     display: none;
 }
@@ -76,31 +110,11 @@ video{
 	width: 50%;
 }
 
-#about-me h1{
-	border-bottom: 1px solid;
-	margin-bottom: 40px;
-	padding-bottom: 30px;
-}
-
 #about-me p{
 	font-size: 18px;
 }
 
-#skills img{
-	width: 400px;
-	transform: rotate(-80deg);
-	position: relative;
-	left: 600px;
-	bottom: 500px;
-}
 
-#skills .ladder{
-	width: 200px;
-	transform: rotate(0deg);
-	left: 200px;
-	bottom: 0px;
-	transition: all 1s;
-}
 
 
 

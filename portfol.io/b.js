@@ -2,13 +2,19 @@
 
 
 window.addEventListener('scroll',function(){
-	yscroll = window.pageYOffset;
-	console.log(yscroll)
-	if(yscroll>50){
-		$('#front-page').css('opacity',2-yscroll*0.01)
+	scroll = window.pageYOffset;
+	// console.log(scroll)
+	$('#front-page').css('opacity',1-scroll*0.002)
+	if(scroll>200){
+		$('#nav').addClass('navScroll');
+	}
+	else{
+		$('#nav').removeClass('navScroll');
+	}
+	if(scroll>50){
 		$("#main-content").slideDown(2000);
 	}	
-	if(yscroll>600){
+	if(scroll>600){
 		$("#about-me").slideDown(2000);
 	}
 })
