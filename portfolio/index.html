@@ -16,6 +16,7 @@
 
     <!-- css -->
     <link rel="stylesheet" type="text/css" href="a.css">
+    <link rel="stylesheet" type="text/css" href="../lib/position-aware-button-hover/dist/style.css">
 
     <title>Soumyadeep Auddy Portfolio</title>
   </head>
@@ -28,20 +29,20 @@
       <div>
         <div onclick="location.href='https://www.linkedin.com/in/soumyadeep-auddy-270a89141/'" class="nav-right"><i class='fab fa-linkedin'></i></div>
         <div onclick="location.href='https://github.com/auddy99'" class="nav-right"><i class='fab fa-github'></i></div>
-        <div class="nav-right"><a href="../SoumyadeepAuddyCV.pdf" download='SoumyadeepAuddyCV'>Download CV <i class='fas fa-download'></i></a></div>
+        <div class="nav-right"><a class="btn-posnawr" href="../SoumyadeepAuddyCV.pdf" download='SoumyadeepAuddyCV'>Download CV <i class='fas fa-download'></i><span></span></a></div>
+
       </div>
     </div>
-
     <div id='front-page' class='scrolled' speed='1.5'>
       <h1 id="main-title" class="display-1">Soumyadeep Auddy</h1>
       <div id="main-content">
         <h2>C o n t e n t s</h2>
         <h3>About</h3>
         <h3>Skills</h3>
-        <h3>Experience</h3>
-        <h3>Education</h3>
         <h3>Projects</h3>
+        <h3>Experience</h3>
         <h3>Achievements</h3>
+        <h3>Education</h3>
         <h3>Contact me</h3>
       </div>
       <video autoplay muted loop style="width: 100%">
@@ -63,23 +64,23 @@
     </div>
 
     <div id='skills' class="subHead container">
-        <h1 class="raleway display-1" x=180 y=-10>Skills</h1>     
-        <h1 class="raleway display-4" x=80 y=222>Data Science</h1>     
-        <h1 class="raleway display-4" x=230 y=420>Coding</h1>     
-        <h1 class="raleway display-4" x=180 y=620>Web Dev</h1>     
-        <h1 class="raleway display-4" x=240 y=820>Others</h1>     
-        <h1 class="raleway" x=640 y=282>Python</h1>     
-        <h1 class="raleway" x=880 y=282>ML-NLP</h1>     
-        <h1 class="raleway" x=1100 y=282>Deep Learning</h1>     
-        <h1 class="raleway" x=480 y=480>Competitive Coding</h1>     
-        <h1 class="raleway" x=890 y=480>DS and Algo</h1>     
-        <h1 class="raleway" x=1150 y=480>C/C++</h1>     
-        <h1 class="raleway" x=550 y=680>HTML-CSS-JS</h1>     
-        <h1 class="raleway" x=910 y=680>PHP</h1>     
-        <h1 class="raleway" x=1130 y=680>JQuery</h1>     
-        <h1 class="raleway" x=640 y=880>Heroku</h1>     
-        <h1 class="raleway" x=890 y=880>Github</h1>     
-        <h1 class="raleway" x=1100 y=880>Networking</h1>     
+        <h2 class="raleway display-1 btn-hl" x=180 y=-10>Skills</h2>     
+        <h2 class="raleway display-4" x=80 y=222>Data Science</h2>     
+        <h2 class="raleway display-4" x=230 y=420>Coding</h2>     
+        <h2 class="raleway display-4" x=180 y=620>Web Dev</h2>     
+        <h2 class="raleway display-4" x=240 y=820>Others</h2>     
+        <h2 class="raleway" x=660 y=282>Python</h2>     
+        <h2 class="raleway" x=900 y=282>ML-NLP</h2>     
+        <h2 class="raleway" x=1100 y=282>Deep Learning</h2>     
+        <h2 class="raleway" x=660 y=480>C/C++</h2>     
+        <h2 class="raleway" x=900 y=480>DS Algo</h2>     
+        <h2 class="raleway" x=1100 y=480>Comp. Coding</h2>     
+        <h2 class="raleway" x=670 y=680>PHP</h2>     
+        <h2 class="raleway" x=900 y=680>JQuery</h2>     
+        <h2 class="raleway" x=1100 y=680>HTML-CSS-JS</h2>     
+        <h2 class="raleway" x=660 y=880>Heroku</h2>     
+        <h2 class="raleway" x=900 y=880>Github</h2>     
+        <h2 class="raleway" x=1120 y=880>Networking</h2>     
     </div>
     <div id="project">
       <!-- <img src="ladder.png"> -->
@@ -140,7 +141,22 @@
     proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
     
 
-    
+
+    <!--Waves Container-->
+    <div id='wave'>
+        <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+        viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+        <defs>
+        <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+        </defs>
+        <g class="parallax">
+            <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+            <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+            <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+            <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+        </g>
+        </svg>
+    </div>  
     
 
     <!-- Optional JavaScript -->
@@ -152,5 +168,6 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script type="text/javascript" src="a.js"></script>
     <script type="text/javascript" src="network.js"></script>
+    <script type="text/javascript" src="../lib/position-aware-button-hover/dist/script.js"></script>
   </body>
 </html>

@@ -129,10 +129,11 @@ video{
 	transition: all 1s;
 }
 
-#skills h1{
+#skills h2{
     position: absolute;
     top: 0px;
     left: 0px;
+    color: #ddd;
 }
 
 
