@@ -12,7 +12,7 @@ body{
 	color: white;
 }
 
-.raleway{
+.raleway, h1{
 	font-family: 'Raleway', sans-serif;
 }
 
@@ -40,7 +40,7 @@ body{
     cursor: pointer;
 }
 
-#nav a{
+a{
     color: white;
     text-decoration: none;
     margin: 0 5px;
@@ -52,6 +52,7 @@ body{
     bottom: 5px;
     cursor: pointer;
 }
+a:hover{text-decoration: none;}
 
 .navScroll{
     top: 0px !important;
@@ -157,6 +158,19 @@ video{
   background: #555;
 }
 
-canvas{
-    /*border: 2px solid;*/
+
+
+.proj-item {
+    margin: 0 20%;
+    border: 0.2px solid rgba(250,255,255,0.2);
+    display: grid;
+    grid-template-columns: 100%;
+    grid-gap: 30px;
+    padding: 50px 50px;
+    min-height: 310px;
+    transition: all 0.3s;
+}
+
+.proj-item p,.proj-item h1{
+    width: 800px;
 }

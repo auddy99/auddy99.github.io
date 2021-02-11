@@ -10,10 +10,10 @@ $("#main-content").slideDown(2000);
 
 window.addEventListener('scroll',function(){
 	let scroll = window.pageYOffset;
-	console.log(scroll)
+	// console.log(scroll)
 	if(scroll > 200){$('#nav').addClass('navScroll');}
 	else{$('#nav').removeClass('navScroll');}
-	if(scroll > 900){skillBegin()}
+	if(scroll > 800){skillBegin()}
 	if(scroll > 2500){
 		$('head').append('<link rel="stylesheet" type="text/css" href="../simple-css-waves/dist/style.css">')
 	}
@@ -59,3 +59,23 @@ function skillBegin(){
 		$("#skills h2:nth-child(17)").fadeIn(1000)
 	},13100)
 }
+
+$(".pieID").css("display","none")
+$(".proj-item").mouseenter(function(){
+	sno = $(this).attr("sno")
+	$("#legend"+sno).css("display","block");
+	$("#pie"+sno).css("display","block");
+	$(this).css("grid-template-columns","70% 15% 15%")
+	$(this).css("margin","0 10%")
+	createPie("#legend"+sno, "#pie"+sno);
+})
+$(".proj-item").mouseleave(function(){
+	sno = $(this).attr("sno")
+	$("#legend"+sno).css("display","none");
+	$("#pie"+sno).css("display","none");
+	$(this).css("grid-template-columns","100%")
+	$(this).css("margin","0 20%")
+	// createPie("#legend"+sno, "#pie"+sno);
+})
+
+
