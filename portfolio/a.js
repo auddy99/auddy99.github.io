@@ -30,34 +30,34 @@ function skillBegin(){
 	skillStart = 1
 	setTimeout(function(){
 		$("#skills h2:nth-child(2)").fadeIn(1000)
-	},2500)
+	},2200)
 	setTimeout(function(){
 		$("#skills h2:nth-child(3)").fadeIn(1000)
 		$("#skills h2:nth-child(6)").fadeIn(1000)
-	},4400)
+	},3400)
 	setTimeout(function(){
 		$("#skills h2:nth-child(4)").fadeIn(1000)
 		$("#skills h2:nth-child(7)").fadeIn(1000)
 		$("#skills h2:nth-child(9)").fadeIn(1000)
-	},6100)
+	},4600)
 	setTimeout(function(){
 		$("#skills h2:nth-child(5)").fadeIn(1000)
 		$("#skills h2:nth-child(8)").fadeIn(1000)
 		$("#skills h2:nth-child(10)").fadeIn(1000)
 		$("#skills h2:nth-child(12)").fadeIn(1000)
-	},7900)
+	},5800)
 	setTimeout(function(){
 		$("#skills h2:nth-child(11)").fadeIn(1000)
 		$("#skills h2:nth-child(13)").fadeIn(1000)
 		$("#skills h2:nth-child(15)").fadeIn(1000)
-	},9700)
+	},7000)
 	setTimeout(function(){
 		$("#skills h2:nth-child(14)").fadeIn(1000)
 		$("#skills h2:nth-child(16)").fadeIn(1000)
-	},11400)
+	},8300)
 	setTimeout(function(){
 		$("#skills h2:nth-child(17)").fadeIn(1000)
-	},13100)
+	},9600)
 }
 
 $(".pieID").css("display","none")
@@ -66,7 +66,8 @@ $(".proj-item").mouseenter(function(){
 	$("#legend"+sno).css("display","block");
 	$("#pie"+sno).css("display","block");
 	$(this).css("grid-template-columns","70% 15% 15%")
-	$(this).css("margin","0 10%")
+	$(this).css("margin","0 10% 50px")
+	$(this).css("background","#122027")
 	createPie("#legend"+sno, "#pie"+sno);
 })
 $(".proj-item").mouseleave(function(){
@@ -74,7 +75,8 @@ $(".proj-item").mouseleave(function(){
 	$("#legend"+sno).css("display","none");
 	$("#pie"+sno).css("display","none");
 	$(this).css("grid-template-columns","100%")
-	$(this).css("margin","0 20%")
+	$(this).css("background","#0F1A20")
+	$(this).css("margin","0 20% 50px")
 	// createPie("#legend"+sno, "#pie"+sno);
 })
 

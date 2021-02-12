@@ -2,6 +2,7 @@
   position: relative;
   display: inline-table;
   overflow: hidden;
+  z-index: 0;
   color: #fff;
   transition: all 0.3s;
 }

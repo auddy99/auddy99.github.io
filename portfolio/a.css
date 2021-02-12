@@ -12,7 +12,7 @@ body{
 	color: white;
 }
 
-.raleway, h1{
+.raleway{
 	font-family: 'Raleway', sans-serif;
 }
 
@@ -40,7 +40,7 @@ body{
     cursor: pointer;
 }
 
-a{
+.btn-posnawr{
     color: white;
     text-decoration: none;
     margin: 0 5px;
@@ -52,7 +52,8 @@ a{
     bottom: 5px;
     cursor: pointer;
 }
-a:hover{text-decoration: none;}
+.btn-posnawr:hover{text-decoration: none;}
+.proj-item .btn-posnawr{ margin-top:15px; padding:8px; font-size: 18px; }
 
 .navScroll{
     top: 0px !important;
@@ -159,9 +160,12 @@ video{
 }
 
 
+#project .subHead{
+    margin: 300px 10% 100px;
+}
 
 .proj-item {
-    margin: 0 20%;
+    margin: 0 20% 50px;
     border: 0.2px solid rgba(250,255,255,0.2);
     display: grid;
     grid-template-columns: 100%;
