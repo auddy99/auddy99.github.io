@@ -1,10 +1,4 @@
-/*
-grey:			#88A2AA
-grey-orange:	#ADA296
-skin:			#E2856E
-orange:			#F42C04
-black:			#0F1A20
-*/
+@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap');
 
 body{
 	background: #0F1A20;
@@ -60,7 +54,7 @@ body{
 }
 
 video{
-	filter: brightness(0.8);
+	filter: brightness(0.6);
 }
 
 #front-page{
@@ -73,6 +67,16 @@ video{
     color: white;
     top: 100px;
     left: 100px;
+}
+
+#typeConsole {
+    position: absolute;
+    z-index: 2;
+    color: white;
+    top: 320px;
+    left: 660px;
+    font-size: 23px;
+    font-family: Cutive Mono;
 }
 
 #main-content {
