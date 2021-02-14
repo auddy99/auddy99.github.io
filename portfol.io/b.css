@@ -11,13 +11,8 @@ body{
 	color: white;
 }
 
-.raleway{
-	font-family: 'Raleway', sans-serif;
-}
-
-.nav-right{
-	display: inline;
-}
+.raleway{font-family: 'Raleway', sans-serif;}
+.nav-right{display: inline;}
 
 #nav {
     background: linear-gradient(180deg, #0F1A20, #122831);
@@ -52,18 +47,14 @@ body{
     cursor: pointer;
 }
 
-.navScroll{
-    top: 0px !important;
-}
+.navScroll{top: 0px !important;}
 
 video{
     width: 100%;
 	filter: brightness(0.5);
 }
 
-#front-page{
-    height:800px;
-}
+#front-page{height:800px;}
 
 #main-title {
     position: absolute;
@@ -101,20 +92,27 @@ video{
     padding-bottom: 30px;
 }
 
-#about-me{
-    display: none;
-}
-
-#about-me img{
-	border-radius: 50%;
-	width: 50%;
-}
-
+#about-me{display: none;}
+#about-me img{border-radius: 50%;width: 50%;}
 #about-me p{
+    width: 50%;
 	font-size: 18px;
+    float: left;
 }
 
-
+#skills{display: none; margin-top: 100px}
+#skills h4{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    color: #ddd;
+}
+.skill-M{
+    font-size: 28px;
+}
+.skill-m{
+    font-size: 20px;
+}
 
 
 

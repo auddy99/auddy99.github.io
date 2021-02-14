@@ -14,9 +14,6 @@ window.addEventListener('scroll',function(){
 	if(scroll > 200){$('#nav').addClass('navScroll');}
 	else{$('#nav').removeClass('navScroll');}
 	if(scroll > 800){skillBegin()}
-	if(scroll > 2500){
-		$('head').append('<link rel="stylesheet" type="text/css" href="../simple-css-waves/dist/style.css">')
-	}
 	$('.scrolled').each(function(){
 		$(this).css('transform','translateY(-'+parseInt($(this).attr('speed'))*scroll+'px)')		
 		$(this).css('opacity',1-0.003*scroll)

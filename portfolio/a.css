@@ -119,22 +119,6 @@ video{
 #about-me img{border-radius: 50%;width: 50%;}
 #about-me p{font-size: 18px;}
 
-#skills img{
-	width: 400px;
-	transform: rotate(-80deg);
-	position: relative;
-	left: 600px;
-	bottom: 500px;
-}
-
-#skills .ladder{
-	width: 200px;
-	transform: rotate(0deg);
-	left: 200px;
-	bottom: 0px;
-	transition: all 1s;
-}
-
 #skills h2{
     position: absolute;
     top: 0px;
