@@ -77,4 +77,16 @@ $(".proj-item").mouseleave(function(){
 	// createPie("#legend"+sno, "#pie"+sno);
 })
 
+$(".exp-r2").slideToggle();
+$(".exp-item").mouseenter(function(){
+	$(this).css("background","#122027");
+	$(this).children(".exp-r2").slideToggle();
+	$(this).children(".exp-r2").children(".exp-r2c2").children(".bar-button").click();
+});
+$(".exp-item").mouseleave(function(){
+	$(this).css("background","#0F1A20");
+	$(this).children(".exp-r2").slideToggle(400,function(){
+		$(this).children(".exp-r2c2").children("svg").remove();
+	});
+})
 

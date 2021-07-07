@@ -1,0 +1,118 @@
+body { 
+  background-color: rgb(29, 31, 32); 
+}
+
+#column-chart {
+        -moz-transform: scaleY(-1);
+        -o-transform: scaleY(-1);
+        -webkit-transform: scaleY(-1);
+        transform: scaleY(-1);
+        filter: FlipY;
+        -ms-filter: "FlipY";
+} // this makes the bars grow from the bottom rather than top
+
+@mixin keyframes($name, $percent) { // first argument is name of animation, and then percentage
+  @keyframes #{$name} {
+    0% {
+    transform: scaleY(0);
+  }
+  100% {
+    transform: scaleY(#{$percent});
+  }
+  }
+}
+  
+@include keyframes(grow1, 65);
+@include keyframes(grow2, 80);
+@include keyframes(grow3, 60);
+@include keyframes(grow4, 90);
+@include keyframes(grow5, 70);
+@include keyframes(grow6, 60);
+@include keyframes(grow7, 40);
+@include keyframes(grow8, 50);
+
+#bar1 {
+  fill: blue;
+  tranform-origin: top;
+  transform: scaleY(0);
+  animation: grow1 3s 0s ease 1 forwards;
+}
+
+#bar2 {
+  fill: red;
+  tranform-origin: top;
+  transform: scaleY(0);
+  animation: grow2 3s 0.5s ease 1 forwards;
+}
+
+#bar3 {
+  fill: green;
+  tranform-origin: top;
+  transform: scaleY(0);
+  animation: grow3 3s 1s ease 1 forwards;
+}
+
+#bar4 {
+  fill: orange;
+  transform: scaleY(0);
+  tranform-origin: top;
+  animation: grow4 3s 1.5s ease 1 forwards;
+}
+
+#bar5 {
+  fill: blue;
+  transform: scaleY(0);
+  tranform-origin: top;
+  animation: grow5 3s 2s ease 1 forwards;
+}
+
+#bar6 {
+  fill: red;
+  transform: scaleY(0);
+  tranform-origin: top;
+  animation: grow6 3s 2.5s ease 1 forwards;
+}
+
+#bar7 {
+  fill: green;
+  transform: scaleY(0);
+  tranform-origin: top;
+  animation: grow7 3s 3s ease 1 forwards;
+}
+
+#bar8 {
+  fill: orange;
+  transform: scaleY(0);
+  tranform-origin: top;
+  animation: grow8 3s 3.5s ease 1 forwards;
+}
+
+
+
+@mixin keyframes($name, $percent) {
+  @keyframes #{$name} {
+    0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(#{$percent});
+  }
+  }
+}
+  
+@include keyframes(grow1a, 80);
+@include keyframes(grow2a, 65);
+
+#bar1a {
+  fill: blue;
+  transform: scaleX(0);
+  tranform-origin: left;
+  animation: grow1a 3s 0s ease 1 forwards;
+}
+
+#bar2a {
+  fill: red;
+  transform: scaleX(0);
+  tranform-origin: left;
+  animation: grow2a 3s 0.5s ease 1 forwards;
+} 

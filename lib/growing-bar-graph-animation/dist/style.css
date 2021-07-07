@@ -1,0 +1,62 @@
+#column-chart {
+  -moz-transform: scaleY(-1);
+  -o-transform: scaleY(-1);
+  -webkit-transform: scaleY(-1);
+  transform: scaleY(-1);
+  filter: FlipY;
+  -ms-filter: "FlipY";
+}
+
+@keyframes grow1a {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(80);
+  }
+}
+@keyframes grow2a {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(65);
+  }
+}
+@keyframes grow3a {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(75);
+  }
+}
+
+#bar1a {
+  fill: #6ac052;
+  transform: scaleX(0);
+  tranform-origin: left;
+  animation: grow1a 2s 0s ease 1 forwards;
+}
+
+#bar2a {
+  fill: #57c8d7;
+  transform: scaleX(0);
+  tranform-origin: left;
+  animation: grow2a 2s 0s ease 1 forwards;
+}
+
+#bar3a {
+  fill: #77b7d4;
+  transform: scaleX(0);
+  tranform-origin: left;
+  animation: grow3a 2s 0s ease 1 forwards;
+}
+
+.bar-label{
+  font-weight: bold;
+  color: white;
+}
+
+
+
