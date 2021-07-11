@@ -14,70 +14,96 @@ var skillStart = 0;
 function setup() {
   wd = window.innerWidth
   ht = window.innerHeight
-  ctc = createCanvas(0.7*wd, 1.2*ht);
+  ctc = createCanvas(0.7*wd, 1.3*ht);
   // ctc = $('#defaultCanvas0')
   ctc.drawingContext.fillStyle = strokeColor
 
   network = new Network(width/2, height/2);
   
-  x=-350; y=-400
-  var a = new Neuron(x, y);
-  var b = new Neuron(x, y+200);
-  var c = new Neuron(x, y+400);
-  var d = new Neuron(x, y+600);
-  var e = new Neuron(x, y+800);
-  var b1 = new Neuron(x+250, y+200);
-  var b2 = new Neuron(x+500, y+200);
-  var b3 = new Neuron(x+750, y+200);
-  var c1 = new Neuron(x+250, y+400);
-  var c2 = new Neuron(x+500, y+400);
-  var c3 = new Neuron(x+750, y+400);
-  var d1 = new Neuron(x+250, y+600);
-  var d2 = new Neuron(x+500, y+600);
-  var d3 = new Neuron(x+750, y+600);
-  var e1 = new Neuron(x+250, y+800);
-  var e2 = new Neuron(x+500, y+800);
-  var e3 = new Neuron(x+750, y+800);
+
+  x=-50; y=-330
+  var s = new Neuron(x, y);
+  var ml = new Neuron(x-180, y+150);
+  var lg = new Neuron(x+300, y+200);
+  var dv = new Neuron(x+50, y+560);
+  
+  var cp = new Neuron(x+180, y+330);
+  var cc = new Neuron(x+180, y+450);
+  var cs = new Neuron(x+320, y+380);
+  var jv = new Neuron(x+400, y+300);
+
+  var py = new Neuron(x-60, y+250);
+  var kg = new Neuron(x-280, y+250);
+  var dl = new Neuron(x-220, y+380);
+  var oc = new Neuron(x-290, y+480);
+  var nn = new Neuron(x-150, y+480);
+  var fl = new Neuron(x-90, y+380);
+
+  var wb = new Neuron(x-100, y+650);
+  var it = new Neuron(x+180, y+650);
+
+  var ht = new Neuron(x-250, y+620);
+  var ph = new Neuron(x-200, y+780);
+  var js = new Neuron(x-20, y+780);
+  var sq = new Neuron(x+30, y+700);
+  var xm = new Neuron(x+280, y+600);
+  var wx = new Neuron(x+260, y+750);
   
   //skill
-  network.connect(a , b , 1);//Data Science
-  network.connect(b , c , 1);//Coding
-  network.connect(c , d , 1);//Web dev
-  network.connect(d , e , 1);//Others
-  //Data Science
-  network.connect(b , b1 , 1);//Python
-  network.connect(b1 , b2 , 1);//ML-NLP
-  network.connect(b2 , b3 , 1);//Deep Learning
-  //Coding
-  network.connect(c , c1 , 1);//Competitive Coding
-  network.connect(c1 , c2 , 1);//DS and Algorithmn
-  network.connect(c2 , c3 , 1);//C/C++
-  //Web dev
-  network.connect(d , d1 , 1);//HTML-CSS-JS
-  network.connect(d1 , d2 , 1);//PHP
-  network.connect(d2 , d3 , 1);//JQuery-Bootstrap
-  //Others
-  network.connect(e , e1 , 1);//Heroku
-  network.connect(e1 , e2 , 1);//Github
-  network.connect(e2 , e3 , 1);//Networking
-  
-  network.addNeuron(a);
-  network.addNeuron(b);
-  network.addNeuron(c);
-  network.addNeuron(d);
-  network.addNeuron(e);
-  network.addNeuron(b1);
-  network.addNeuron(b2);
-  network.addNeuron(b3);
-  network.addNeuron(c1);
-  network.addNeuron(c2);
-  network.addNeuron(c3);
-  network.addNeuron(d1);
-  network.addNeuron(d2);
-  network.addNeuron(d3);
-  network.addNeuron(e1);
-  network.addNeuron(e2);
-  network.addNeuron(e3);
+  network.connect(s , ml , 1);
+  network.connect(s , lg , 1);
+  network.connect(s , dv , 1);
+
+  network.connect(ml , kg , 1);
+  network.connect(ml , dl , 1);
+  network.connect(ml , fl , 1);
+  network.connect(ml , py , 1);
+
+  network.connect(lg , py , 1);
+  network.connect(lg , cp , 1);
+  network.connect(lg , cs , 1);
+  network.connect(lg , jv , 1);
+
+  network.connect(dv , wb , 1);
+  network.connect(dv , it , 1);
+
+  network.connect(wb , fl , 1);
+  network.connect(wb , ht , 1);
+  network.connect(wb , ph , 1);
+  network.connect(wb , js , 1);
+  network.connect(wb , sq , 1);
+
+  network.connect(it , xm , 1);
+  network.connect(it , wx , 1);
+
+  network.connect(dl , oc , 1);
+  network.connect(dl , nn , 1);
+  network.connect(xm , cs , 1);
+  network.connect(cp , cc , 1);
+
+network.addNeuron(s);
+network.addNeuron(ml);
+network.addNeuron(lg);
+network.addNeuron(dv);
+network.addNeuron(py);
+network.addNeuron(cp);
+network.addNeuron(cc);
+network.addNeuron(cs);
+network.addNeuron(jv);
+network.addNeuron(kg);
+network.addNeuron(dl);
+network.addNeuron(oc);
+network.addNeuron(nn);
+network.addNeuron(fl);
+network.addNeuron(wb);
+network.addNeuron(it);
+network.addNeuron(ht);
+network.addNeuron(ph);
+network.addNeuron(js);
+network.addNeuron(sq);
+network.addNeuron(xm);
+network.addNeuron(wx);
+
   
   //UNCOMMENT THESE TO USE TARGET
   canv = $("#defaultCanvas0")
