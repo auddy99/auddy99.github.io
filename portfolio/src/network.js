@@ -14,14 +14,14 @@ var skillStart = 0;
 function setup() {
   wd = window.innerWidth
   ht = window.innerHeight
-  ctc = createCanvas(0.7*wd, 1.3*ht);
+  ctc = createCanvas(0.7*wd, 1.15*ht);
   // ctc = $('#defaultCanvas0')
   ctc.drawingContext.fillStyle = strokeColor
 
   network = new Network(width/2, height/2);
   
 
-  x=-50; y=-330
+  x=-50; y=-400
   var s = new Neuron(x, y);
   var ml = new Neuron(x-180, y+150);
   var lg = new Neuron(x+300, y+200);
@@ -78,7 +78,7 @@ function setup() {
 
   network.connect(dl , oc , 1);
   network.connect(dl , nn , 1);
-  network.connect(xm , cs , 1);
+  network.connect(cs , xm , 1);
   network.connect(cp , cc , 1);
 
 network.addNeuron(s);

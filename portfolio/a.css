@@ -130,14 +130,32 @@ video{
 #about-me img{border-radius: 50%;width: 50%;}
 #about-me p{font-size: 18px;}
 
-#skills h2{
+/*#skills h2{
     position: absolute;
     top: 0px;
     left: 0px;
     color: #ddd;
+}*/
+#skills h2{
+    margin-bottom: 0;
+    height: 95px;
+    text-align: center;
+    padding-right: 100px;
 }
+.skillBox img{width: 30px;}
+.skillBox span{font-size: 20px;color: #0F1A20; margin: 0 10px;}
+.skillBox{
+    background: white; 
+    width: fit-content;
+    padding: 5px;
+    border-radius: 5px;
+    display: flex;
+    opacity: 0.7;
 
-
+    position: absolute;
+    top: 0;
+    left: 0;
+}
 /* width */
 ::-webkit-scrollbar {
   width: 2px;

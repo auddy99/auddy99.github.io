@@ -1,10 +1,5 @@
 var sX = 0
 var sY = 1500
-$("#skills h2").css("display","none")
-$("#skills h2:nth-child(1)").css("display","block")
-$("#skills h2").each(function(){
-	$(this).css({'top':sY+parseInt($(this).attr('y'))+'px','left':sX+parseInt($(this).attr('x'))+'px'})
-})
 
 $("#main-content").slideDown(2000);
 
@@ -20,42 +15,6 @@ window.addEventListener('scroll',function(){
 	})
 	
 })
-
-
-
-function skillBegin(){
-	skillStart = 1
-	setTimeout(function(){
-		$("#skills h2:nth-child(2)").fadeIn(1000)
-	},2200)
-	setTimeout(function(){
-		$("#skills h2:nth-child(3)").fadeIn(1000)
-		$("#skills h2:nth-child(6)").fadeIn(1000)
-	},3400)
-	setTimeout(function(){
-		$("#skills h2:nth-child(4)").fadeIn(1000)
-		$("#skills h2:nth-child(7)").fadeIn(1000)
-		$("#skills h2:nth-child(9)").fadeIn(1000)
-	},4600)
-	setTimeout(function(){
-		$("#skills h2:nth-child(5)").fadeIn(1000)
-		$("#skills h2:nth-child(8)").fadeIn(1000)
-		$("#skills h2:nth-child(10)").fadeIn(1000)
-		$("#skills h2:nth-child(12)").fadeIn(1000)
-	},5800)
-	setTimeout(function(){
-		$("#skills h2:nth-child(11)").fadeIn(1000)
-		$("#skills h2:nth-child(13)").fadeIn(1000)
-		$("#skills h2:nth-child(15)").fadeIn(1000)
-	},7000)
-	setTimeout(function(){
-		$("#skills h2:nth-child(14)").fadeIn(1000)
-		$("#skills h2:nth-child(16)").fadeIn(1000)
-	},8300)
-	setTimeout(function(){
-		$("#skills h2:nth-child(17)").fadeIn(1000)
-	},9600)
-}
 
 $(".pieID").css("display","none")
 $(".proj-item").mouseenter(function(){
